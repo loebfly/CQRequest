@@ -1,0 +1,28 @@
+{
+  "name": "CQRequest",
+  "version": "1.0.0",
+  "summary": "An smart request component.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/luchunqing/CQRequest.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "luchunqing": "357406094@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/luchunqing/CQRequest.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CQRequest/*.{h,m}",
+  "public_header_files": "CQRequest/*.h",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
+}

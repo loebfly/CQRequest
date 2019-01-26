@@ -1,0 +1,6 @@
+framework module CQRequest {
+  umbrella header "CQRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_CQRequest_Example {
+  umbrella header "Pods-CQRequest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CQRequest_Example' do
+  pod 'CQRequest', :path => '../'
+
+  target 'CQRequest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
