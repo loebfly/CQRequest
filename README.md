@@ -1,15 +1,15 @@
-# CQRequest
+#添加仓库
 
-## Example
+```ruby
+pod repo add https://github.com/luchunqing/CQSpecs.git
+```
+#搜索
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```ruby
+pod search CQRequest
+```
 
-## Requirements
-
-## Installation
-
-CQRequest is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+#安装
 
 ```ruby
 pod 'CQRequest'
