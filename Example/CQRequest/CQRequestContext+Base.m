@@ -19,7 +19,7 @@
     context.signature = [DemoRequestSignature new];
     context.validation = [DemoResponseValidation new];
     context.method = CQRequestMethodPOST;
-    context.mapper = [DemoMapper class];
+    context.mapper = [DemoMapper new];
     return context;
 }
 

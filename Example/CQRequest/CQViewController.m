@@ -31,16 +31,19 @@
     //普通
     req = request(context);
     
-    /*
+    
     //上传
-    req = uploadData(context, [NSData data]);
+    NSData *upData = nil;
+    req = uploadData(context, upData);
     req = uploadFile(context, [NSURL fileURLWithPath:@"文件地址"]);
+    
     //下载
-    req = download(context, [NSData data], ^NSURL *(NSURL *targetPath, NSURLResponse *response) {
+    NSData *resumeData = nil;
+    req = download(context, resumeData, ^NSURL *(NSURL *targetPath, NSURLResponse *response) {
         //返回要下载存放的路径
         return targetPath;
     });
-    */
+    
     //请求结果响应
     [req response:^(CQResponse *response) {
         if (response.error) {

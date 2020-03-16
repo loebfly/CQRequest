@@ -63,6 +63,6 @@
 //数据模型转化协议
 @protocol CQResponseMapper <NSObject>
 
-- (id)mapResponseData:(NSData *)data mapClass:(Class)mapClass;
+- (id)mapResponseData:(id)responseData mapClass:(Class)mapClass;
 
 @end

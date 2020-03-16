@@ -7,13 +7,19 @@
 //
 
 #import "DemoMapper.h"
-
+#import <MJExtension/MJExtension.h>
 @implementation DemoMapper
 
-- (id)mapResponseData:(NSData *)data mapClass:(Class)mapClass {
-    //返回ResponseObject,例如数组，对象
-    return [NSArray array];
-    return [NSObject new];
+- (id)mapResponseData:(id)responseData mapClass:(Class)mapClass {
+    //示例
+    //这里的responseData 来自于CQResponse 的 responseObject 也就是 DemoResponseValidation 代理方法 中处理过得业务数据
+    id result = responseData;
+    if ([responseData isKindOfClass:[NSDictionary class]]) {
+       result = [mapClass mj_objectWithKeyValues:responseData];
+    } else if ([responseData isKindOfClass:[NSArray class]]) {
+       result = [mapClass mj_objectArrayWithKeyValuesArray:responseData];
+    }
+    return result;
 }
 
 @end

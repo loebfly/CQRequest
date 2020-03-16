@@ -88,7 +88,7 @@
             }
         }];
     } else {
-        if (!response.error && self.mapClass) {
+        if (!response.error && self.mapClass && self.mapper) {
             [self mapResponse:response completion:completion];
         } else {
             completion(response);
@@ -102,7 +102,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         if (!response.error && response.responseObject) {
-            if (self.mapper && [self.mapper respondsToSelector:@selector(mapResponseData:mapClass:)]) {
+            if ([self.mapper respondsToSelector:@selector(mapResponseData:mapClass:)]) {
                 response.responseObject = [self.mapper mapResponseData:response.responseObject mapClass:self.mapClass];
             }
             

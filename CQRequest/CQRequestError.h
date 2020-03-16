@@ -16,7 +16,6 @@ typedef NS_ENUM (NSInteger, CQRequestErrorCode) {
     CQRequestErrorCancel = NSURLErrorCancelled,  // 请求取消
     CQRequestErrorTimeOut = NSURLErrorTimedOut,  // 请求超时
     CQRequestErrorNoNetWork = NSURLErrorNotConnectedToInternet,  //无网络
-    CQRequestErrorSuccess,// 成功
 };
 
 

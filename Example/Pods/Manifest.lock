@@ -16,13 +16,16 @@ PODS:
     - AFNetworking/NSURLSession
   - CQRequest (1.0.0):
     - AFNetworking
+  - MJExtension (3.0.17)
 
 DEPENDENCIES:
   - CQRequest (from `../`)
+  - MJExtension (~> 3.0.13)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - MJExtension
 
 EXTERNAL SOURCES:
   CQRequest:
@@ -30,8 +33,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CQRequest: a3670392ad793d8b168e3c5cfb0497791cb82066
+  CQRequest: 1869b3a524553e001a4143e6d9b0b1da87cfb945
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
 
-PODFILE CHECKSUM: 6548de3c39ce822e611a888e082162a7936c125b
+PODFILE CHECKSUM: 828c11fba126dd7d16e6f7165f0197436393ca48
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

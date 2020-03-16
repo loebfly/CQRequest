@@ -16,15 +16,14 @@
 @property (nonatomic, strong, readonly) NSURLResponse *URLResponse;
 @property (nonatomic, strong, readonly) NSData *data;//请求原数据
 @property (nonatomic, strong) NSError *error;//请求错误
+
 //调用后，error会有值 CQRequestErrorDomain
 @property (nonatomic, copy) void (^cancelBlock)(void);
-//默认为 data json后的数据,如果在CQRequestContext中设置了mapClass和mapper，值为 mapper代理返回数据
+
+//默认为原始数据,如果在CQRequestContext中设置了mapClass和mapper，值为 mapper代理返回数据
 @property (nonatomic, strong) id responseObject;
 
 @property (nonatomic, strong) NSDictionary *extraInfo;//扩展信息,预留字段
-
-@property (nonatomic, strong) NSString *logString;//日志
-
 
 
 @end
